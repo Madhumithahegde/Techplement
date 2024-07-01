@@ -15,31 +15,31 @@ The script consists of two main parts: the generate_password function and the ma
 **generate_password(length, use_upper, use_lower, use_digits, use_special)**
 
 1. Parameters:
-> length: Integer value for the length of the password.
-> use_upper: Boolean value to include uppercase letters.
-> use_lower: Boolean value to include lowercase letters.
-> use_digits: Boolean value to include digits.
-> use_special: Boolean value to include special characters.
+   1. length: Integer value for the length of the password.
+   2. use_upper: Boolean value to include uppercase letters.
+   3. use_lower: Boolean value to include lowercase letters.
+   4. use_digits: Boolean value to include digits.
+   5. use_special: Boolean value to include special characters.
 
 2. Functionality:
-> Builds a character pool based on the parameters.
-> Generates a random password by selecting random characters from the pool.
+   1. Builds a character pool based on the parameters.
+   2. Generates a random password by selecting random characters from the pool.
 
 **main()**
-1. Functionality:
-> Prompts the user to enter the password length and whether to include each type of character.
-> Calls the generate_password function with the user inputs.
-> Prints the generated password.
+Functionality:
+ 1. Prompts the user to enter the password length and whether to include each type of character.
+ 2. Calls the generate_password function with the user inputs.
+ 3. Prints the generated password.
 
 **Entry Point**
-> The script includes the following entry point to ensure it runs correctly when executed directly:
+1. The script includes the following entry point to ensure it runs correctly when executed directly:
 > if __name__ == "__main__":
-    import random
-    main()
-> This block ensures that the main function is only called when the script is executed directly, not when it is imported as a module.
+>    import random
+>    main()
+2. This block ensures that the main function is only called when the script is executed directly, not when it is imported as a module.
 
 # Sample Output
-Enter the length of the password:
+> Enter the length of the password:
 8
 Include uppercase letters? (yes/no):
 yes
